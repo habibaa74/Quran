@@ -9,7 +9,7 @@ export default function TimePrayes() {
     city:"Al Gharbīyah"
   }
   async function getTime(){
-    return await axios.get("http://api.aladhan.com/v1/calendarByCity",{params}).then((data)=>{
+    return await axios.get("https://api.aladhan.com/v1/calendarByCity",{params}).then((data)=>{
       setTime(data.data.data)
       setIsLoading(false)
     }).catch((err)=>{

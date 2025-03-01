@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Quran() {
   const [Quran, setQuran] = useState([])
   async function getNames(){
-    return await axios.get("http://api.alquran.cloud/v1/meta").then((data)=>{
+    return await axios.get("https://api.alquran.cloud/v1/meta").then((data)=>{
       setQuran(data.data.data)
     }).catch((err)=>{
       console.log(err);

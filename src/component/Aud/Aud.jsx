@@ -5,7 +5,7 @@ export default function Aud() {
   const [Name, setName] = useState([])
   async function getNames() {
     return await axios
-      .get("http://api.alquran.cloud/v1/meta")
+      .get("https://api.alquran.cloud/v1/meta")
       .then((data) => {
         console.log(data.data.data.surahs.references);
         setName(data.data.data.surahs.references)

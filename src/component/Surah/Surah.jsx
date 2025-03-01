@@ -9,7 +9,7 @@ export default function Surah() {
   let { num, name } = useParams();
   async function getAudio() {
     return await axios
-      .get(`http://api.alquran.cloud/v1/surah/${num}/editions/quran-uthmani,en.asad`)
+      .get(`https://api.alquran.cloud/v1/surah/${num}/editions/quran-uthmani,en.asad`)
       .then((data) => {
         console.log(data.data.data[1]);
         setArabic(data.data.data[0]);
