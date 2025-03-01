@@ -1,0 +1,70 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.home{
+    background-image: url(../src/assets/Cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:682px;
+}
+.style{
+    border: 2px solid transparent;
+    padding: 15px 15px ;
+    transition: all 0.5;
+}
+.style:hover{
+    border: 2px solid #576CBC;
+}
+.family{
+    font-family: "Kufam", serif;
+    font-weight: 700;
+}
+.active{
+    border-bottom: 2px solid blue;
+}
+.Data .num{
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.ayah {
+    padding: .5em;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .ayah::after {
+    content: "\06DD";
+    display: block;
+    position: absolute;
+    font-size: 2em;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+  }
+  audio{
+    position: absolute;
+    left: 0%;
+    bottom: 0px;
+    display: block;
+  }
+ audio::-webkit-media-controls-play-button {
+    background-color: oklch(0.551 0.027 264.364);
+    border-radius: 50%;
+  }
+audio::-webkit-media-controls-play-button:hover {
+    background-color: oklch(0.872 0.01 258.338);
+  }
+  audio::-webkit-media-controls-enclosure {
+    border-radius: 0;
+    border: 0;
+}
+.btnAud{
+position: absolute;
+left:10px;
+  }
+  audio::-webkit-media-controls-panel{
+    background-color: oklch(0.707 0.022 261.325);
+  }
