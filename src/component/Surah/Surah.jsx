@@ -40,7 +40,7 @@ export default function Surah() {
             </h4>
             <h4>
             {English.ayahs?.map((en)=><div dir="ltr">
-               {ayah.numberInSurah === en.numberInSurah ?<h4 className="text-gray-800 font-bold mb-3 dark:text-white text-2xl">
+               {ayah.numberInSurah === en.numberInSurah ?<h4 className="text-white font-bold mb-3 dark:text-gray-500 text-lg">
               {en.text}
             </h4> : null }
             </div>

@@ -21,10 +21,10 @@ export default function Aud() {
 {Name.map((surah)=><Link to={`/AudDetails/${surah.number}/${surah.name}`} key={surah.number} className="Data py-6 pl-6 ps-2 border-2 text-gray-600 border-gray-700 sm:w-full md:w-1/3 lg:w-1/4 hover:text-blue-500 hover:border-blue-500">
 <div className="flex items-center">
 <i className="fa-solid fa-diamond text-5xl relative"><span className='text-white text-lg font-normal absolute num'>{surah.number}</span></i>
-<p className='ms-2 text-2xl font-semibold text-blue-700'>{surah.name}</p>
+<p className='ms-2 text-2xl font-semibold'>{surah.name}</p>
 </div>
 <div className="flex items-center justify-between">
-<p className='font-bold'>Num of Aayahs: <span className='font-semibold text-blue-700'>{surah.numberOfAyahs}</span> </p>
+<p className='font-bold'>Num of Aayahs: <span className='font-semibold'>{surah.numberOfAyahs}</span> </p>
 <p className='ms-2 font-bold'>{surah.revelationType}</p>
 </div>
 </Link>)}
