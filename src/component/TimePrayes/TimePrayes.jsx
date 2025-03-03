@@ -23,7 +23,7 @@ export default function TimePrayes() {
   return (
 <div className='container mx-auto my-5'>
 <div className="relative overflow-x-auto">
-  <h1 className='mb-5 text-white font-semibold text-4xl'>Prayer Times For Al Gharbīyah</h1>
+  <h1 className='mb-5 dark:text-white text-gray-800 font-semibold text-4xl'>Prayer Times For Al Gharbīyah</h1>
   <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
     <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
       <tr>

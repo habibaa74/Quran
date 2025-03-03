@@ -27,7 +27,7 @@ export default function Surah() {
   return (     
     <div>
       <div className="container mx-auto">
-        <h1 className="text-white text-center my-10 text-4xl">{name}</h1>
+        <h1 className="text-gray-800 dark:text-white text-center my-10 text-4xl">{name}</h1>
         {isloading ? <Loader/> : ""}
       {Arabic.ayahs?.map((ayah)=><div
             key={ayah.number}

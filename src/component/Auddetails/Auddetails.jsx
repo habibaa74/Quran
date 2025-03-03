@@ -25,7 +25,7 @@ export default function Auddetails() {
   return (
     <div>
       <div className="container mx-auto">
-        <h1 className="text-white text-center my-10 text-4xl">{name}</h1>
+        <h1 className="dark:text-white text-gray-800 text-center my-10 text-4xl">{name}</h1>
         {isloading ? <Loader/> : ""}
         {audio.map((ad) => (
           <div
